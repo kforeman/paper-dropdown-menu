@@ -166,7 +166,7 @@ contains the selection state.
       var detail = e.detail;
       if (detail.isSelected) {
         this.$.label.classList.add('selectedItem');
-        this.selectedItemLabel = detail.item.label || detail.item.textContent;
+        this.$.label.innerHTML = detail.item.label || detail.item.innerHTML;
       } else {
         this.$.label.classList.remove('selectedItem');
         this.selectedItemLabel = '';
